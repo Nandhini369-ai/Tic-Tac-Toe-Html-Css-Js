@@ -1,0 +1,45 @@
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    flex-direction: column;
+}
+.Game-container {
+    text-align: center;
+    padding: 20px;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.cell {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    background-color: white;
+}
+
+#resetBtn {
+    background-color: #af4c59;
+    padding: 10px 20px;
+    border: 2px solid #333;
+}
+
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+    }
+
+    .cell {
+        font-size: 28px;
+        width: 80px;
+        height: 80px;
+    }
+}
